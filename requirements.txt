@@ -1,6 +1,5 @@
 requests
 pandas
-time
 numpy
 os
 dotenv
