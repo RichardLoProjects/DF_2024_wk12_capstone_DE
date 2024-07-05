@@ -1,8 +1,6 @@
 requests
 pandas
 numpy
-os
-dotenv
 psycopg2-binary
 warnings
 streamlit
