@@ -1,7 +1,4 @@
 .env
-test_pipeline.ipynb
-feedback.txt
+secrets.toml
 ~$pstoneProposal.docx
 ~$CapstoneDashboardPresentation.pptx
-secrets.toml
-legacy.py

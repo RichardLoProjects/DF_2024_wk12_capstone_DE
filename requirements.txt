@@ -1,0 +1,11 @@
+requests
+pandas
+time
+numpy
+os
+dotenv
+psycopg2-binary
+warnings
+streamlit
+matplotlib
+scipy
