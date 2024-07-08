@@ -5,11 +5,13 @@
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://rl-dfde-capstone-merge.streamlit.app/)
 
-### About the project
+### Motivation
 
-Motivation: There is an increasing demand for data to make informed decisions when it comes to managing money. Investment is a choice, but market participation is not. Every party is a market participant, including large organisations. This project aims to use a toy api (with toy data) to prototype how data can be delivered to stakeholders in a user friendly fashion.
+There is an increasing demand for data to make informed decisions when it comes to managing money. Investment is a choice, but market participation is not. Every party is a market participant, including large organisations. This project aims to use a toy api (with toy data) to prototype how data can be delivered to stakeholders in a user friendly fashion.
 
-Description: A dashboard project to allow users to explore economic data from [an api](https://oldschool.runescape.wiki/w/RuneScape:Real-time_Prices). Project is decomposed into two parts:
+### Description
+
+A dashboard project to allow users to explore economic data from [an api](https://oldschool.runescape.wiki/w/RuneScape:Real-time_Prices). Project is decomposed into two parts:
 
 - A data pipeline running on aws ec2 cron job that
 
