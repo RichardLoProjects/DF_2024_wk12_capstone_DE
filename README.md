@@ -1,5 +1,5 @@
 # DF_2024_wk12_capstone_DE
-# 📈 Financial Asset Dashboard for Oldschool Runescape
+# 📈 Financial Asset Dashboard (prototyping with toy data)
 
 ### Link
 
