@@ -13,7 +13,7 @@ There is an increasing demand for data to make informed decisions when it comes 
 
 A dashboard project to allow users to explore economic data from [an api](https://oldschool.runescape.wiki/w/RuneScape:Real-time_Prices). Project is decomposed into two parts:
 
-- A data pipeline running on aws ec2 cron job that
+- A data pipeline running on AWS EC2 cron job that
 
   - extracts from the api
   - transforms data for cleaning
