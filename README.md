@@ -1,11 +1,15 @@
 # DF_2024_wk12_capstone_DE
-# 📊 Financial Asset Dashboard for Oldschool Runescape
+# 📈 Financial Asset Dashboard for Oldschool Runescape
 
 A dashboard project to allow users to explore economic data from [an api](https://oldschool.runescape.wiki/w/RuneScape:Real-time_Prices). Project is decomposed into two parts:
 
-1. A data pipeline that extracts from the api, transforms data for cleaning, and loads data into an AWS RDS database.
+- A data pipeline that
 
-2. A streamlit dashboard for retrieving the data, and displaying
+ - extracts from the api
+ - transforms data for cleaning
+ - loads data into an AWS RDS database
+
+- A streamlit dashboard for retrieving the data, and displaying
 
  - price and volume of featured items
  - weighted midprice of market indices
@@ -14,7 +18,6 @@ A dashboard project to allow users to explore economic data from [an api](https:
  - top 100 charts of: price rises, price falls, most traded, most expensive
  - lookup tables for interchanging item names and IDs
  - custom SQL query results
-
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://rl-dfde-capstone-merge.streamlit.app/)
 
