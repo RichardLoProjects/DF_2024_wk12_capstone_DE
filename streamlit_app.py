@@ -38,7 +38,7 @@ def pinging_database():
 
 def draw_homepage_tab(df, name, uid):
     cols = ['item_id', 'price_timestamp', 'avg_high_price', 'avg_low_price', 'avg_mid_price', 'avg_micro_price', 'total_volume']
-    df2 = df[(df['item_id']==uid)][cols].sort_values('price_timestamp', ascending=True).tail(2)
+    df2 = df[(df['item_id']==uid)][cols].sort_values('price_timestamp', ascending=True).dropna().tail(2)
     st.header(name)
     fig = plt.figure(figsize=(10, 6))
     c1, c2, c3 = st.columns(3)
