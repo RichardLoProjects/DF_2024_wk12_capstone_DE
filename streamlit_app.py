@@ -34,6 +34,7 @@ def pinging_database():
     d_cols = [desc[0] for desc in cur.description]
     d_df = pd.DataFrame(d_data, columns=d_cols)
     conn.close()
+    d_df = d_df.sort_values('price_timestamp', ascending=True, inplace=False).tail(500_000)
     return s_df, d_df
 
 def draw_homepage_tab(df, name, uid):
@@ -73,6 +74,7 @@ def draw_homepage_tab(df, name, uid):
         plt.bar(df3['price_timestamp'].tolist(), df3['total_volume'].tolist(), width=0.02)
         plt.ylabel('Volume', fontsize=15)
     plt.xlabel('Date', fontsize=15)
+    plt.xticks(rotation=45)
     plt.gca().ticklabel_format(axis='y', style='plain')
     st.pyplot(fig)
 
@@ -105,6 +107,7 @@ def draw_marketindex_page_tab(name, df, portfolio, s):
     )
     plt.plot(df2['price_timestamp'], df2[['weighted_sum_prices']])
     plt.xlabel('Date', fontsize=15)
+    plt.xticks(rotation=45)
     plt.ylabel('Price (Weighted Avg)', fontsize=15)
     plt.gca().ticklabel_format(axis='y', style='plain')
     st.pyplot(fig)
@@ -205,16 +208,19 @@ def draw_queryitem_page(df, name, uid):
             plt.plot(df3['price_timestamp'], df3[['avg_mid_price']])
             plt.ylabel('Price', fontsize=15)
             plt.xlabel('Date', fontsize=15)
+            plt.xticks(rotation=45)
             plt.gca().ticklabel_format(axis='y', style='plain')
         case 'Micro Price':
             plt.plot(df3['price_timestamp'], df3[['avg_micro_price']])
             plt.ylabel('Price', fontsize=15)
             plt.xlabel('Date', fontsize=15)
+            plt.xticks(rotation=45)
             plt.gca().ticklabel_format(axis='y', style='plain')
         case 'Volume':
             plt.bar(df3['price_timestamp'].tolist(), df3['total_volume'].tolist(), width=0.02)
             plt.ylabel('Volume', fontsize=15)
             plt.xlabel('Date', fontsize=15)
+            plt.xticks(rotation=45)
             plt.gca().ticklabel_format(axis='y', style='plain')
         case 'KDE':
             df4 = df3.dropna(subset=['avg_mid_price'])
